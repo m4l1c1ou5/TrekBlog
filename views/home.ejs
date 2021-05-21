@@ -1,0 +1,9 @@
+<%- include("partials/header") -%>
+<% for(i=0;i<content.length;i++){ %>
+<div class="box">
+<h1 class="title is-1"> <%= content[i].title %></h1>
+<p class="title is-5"><%= content[i].post.substring(0,100) %>...
+    <a href="/post/<%= content[i].title %>"> Read More</a></p>
+</div>
+<% } %>
+<%- include("partials/footer") -%>
